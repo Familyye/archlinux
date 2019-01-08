@@ -1,0 +1,55 @@
+#!/bin/bash
+#https://wiki.archlinux.org/
+
+#adjust upward mirrors.163.com in /etc/pacman.d/mirrorlist
+#open [archlinuxcn] in /etc/pacman.conf
+
+#xorg
+yes | pacman -S xorg-server
+yes | pacman -S xorg-apps
+yes | pacman -S xf86-video-intel
+
+#kde
+yes | pacman -S plasma-meta
+yes | pacman -S kde-applications-meta
+yes | pacman -S sddm
+systemctl enable sddm
+
+#network
+yes | pacman -S networkmanager
+systemctl enable networkmanager
+yes | pacman -S wpa_supplicant
+
+#input method
+yes | pacman -S fcitx-sogoupinyin
+yes | pacman -S fcitx-im
+yes | pacman -S wqy-bitmapfont
+yes | pacman -S wqy-microhei
+yes | pacman -S wqy-microhei-lite
+yes | pacman -S wqy-zenhei
+yes | pacman -S wqy-microhei-kr-patched
+
+#most used software
+yes | pacman -S htop
+yes | pacman -S tmux
+yes | pacman -S openssh
+yes | pacman -S mlocate
+yes | pacman -S meld
+yes | pacman -S wxhexeditor-git
+yes | pacman -S dia
+yes | pacman -S filezilla
+yes | pacman -S google-chrome
+yes | pacman -S jdk8-openjdk
+yes | pacman -S eclipse-java
+yes | pacman -S gpicview
+yes | pacman -S google-earth-pro
+yes | pacman -S wireshark-cli
+yes | pacman -S qtox
+yes | pacman -S pacvis-git
+yes | pacman -S deluge
+yes | pacman -S vlc
+yes | pacman -S xpdf
+yes | pacman -S wps-office
+yes | pacman -S virtualbox
+yes | pacman -S latte-dock
+yes | pacman -S shutter
