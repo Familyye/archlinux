@@ -53,3 +53,10 @@ yes | pacman -S wps-office
 yes | pacman -S virtualbox
 yes | pacman -S latte-dock
 yes | pacman -S shutter
+yes | pacman -S jadx
+yes | pacman -S anki
+yes | pacman -S shadowsocks
+yes | pacman -S git
+
+#aur
+#https://aur.archlinux.org/packages/tortoisehg/
