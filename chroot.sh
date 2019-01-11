@@ -3,8 +3,9 @@
 
 #mirrors
 sed -i -e '1iServer = http://mirrors.163.com/archlinux/$repo/os/$arch' /etc/pacman.d/mirrorlist
-#echo -e "[archlinuxcn]\nServer = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch\n" >> /etc/pacman.conf
-yes | pacman -Syu
+echo -e "[archlinuxcn]\nServer = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/\$arch\n" >> /etc/pacman.conf
+yes | pacman -Sy
+yes | pacman -S archlinuxcn-keyring
 
 #env
 locale-gen
