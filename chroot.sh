@@ -4,6 +4,21 @@
 #adjust upward mirrors.163.com in /etc/pacman.d/mirrorlist
 #open [archlinuxcn] in /etc/pacman.conf
 
+#
+locale-gen
+echo "LANG=en_US.UTF-8" > /etc/locale.conf
+echo "arch" > /etc/hostname
+echo -e "127.0.0.1	localhost\n::1		localhost" > /etc/hosts
+echo "set root password"
+passwd
+
+#grub
+yes | pacman -S grub
+echo "set grub-install disk, example input /dev/sdb"
+read diskn
+grub-install --target=i386-pc $diskn
+grub-mkconfig -o /boot/grub/grub.cfg
+
 #xorg
 yes | pacman -S xorg-server
 yes | pacman -S xorg-apps
