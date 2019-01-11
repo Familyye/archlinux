@@ -29,6 +29,11 @@ read diskn
 grub-install --target=i386-pc $diskn
 grub-mkconfig -o /boot/grub/grub.cfg
 
+#network
+yes | pacman -S networkmanager
+systemctl enable NetworkManager
+yes | pacman -S wpa_supplicant
+
 #xorg
 yes | pacman -S xorg-server
 yes | pacman -S xorg-apps
@@ -39,11 +44,6 @@ yes | pacman -S plasma-meta
 yes | pacman -S kde-applications-meta
 yes | pacman -S sddm
 systemctl enable sddm
-
-#network
-yes | pacman -S networkmanager
-systemctl enable networkmanager
-yes | pacman -S wpa_supplicant
 
 #input method
 yes | pacman -S fcitx-sogoupinyin
