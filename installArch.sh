@@ -1,13 +1,12 @@
 #!/bin/bash
-cp ./chroot.sh /mnt/chroot.sh
-chmod +x /mnt/chroot.sh
+#cd /mnt
+#wget https://raw.githubusercontent.com/uniking/archlinux/master/installArch.sh
+#wget https://raw.githubusercontent.com/uniking/archlinux/master/chroot.sh
 
 #mirrors
-sed -i -e 'Server = http://mirrors.163.com/archlinux/$repo/os/$arch' /etc/pacman.d/mirrorlist
-echo -e "[archlinuxcn]\nServer = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch\n" >> /etc/pacman.conf
+sed -i -e '1iServer = http://mirrors.163.com/archlinux/$repo/os/$arch' /etc/pacman.d/mirrorlist
 
 #base
 pacstrap /mnt base
 genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt /bin/bash -c "./chroot.sh"
-

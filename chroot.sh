@@ -2,8 +2,8 @@
 #https://wiki.archlinux.org/
 
 #mirrors
-sed -i -e 'Server = http://mirrors.163.com/archlinux/$repo/os/$arch' /etc/pacman.d/mirrorlist
-echo -e "[archlinuxcn]\nServer = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch\n" >> /etc/pacman.conf
+sed -i -e '1iServer = http://mirrors.163.com/archlinux/$repo/os/$arch' /etc/pacman.d/mirrorlist
+#echo -e "[archlinuxcn]\nServer = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch\n" >> /etc/pacman.conf
 yes | pacman -Syu
 
 #env
@@ -74,7 +74,9 @@ yes | pacman -S deluge
 yes | pacman -S vlc
 yes | pacman -S xpdf
 yes | pacman -S wps-office
-yes | pacman -S virtualbox
+echo -e "1\nyes" | pacman -S virtualbox
+yes | pacman -S linux-headers
+modprobe vboxdrv
 yes | pacman -S latte-dock
 yes | pacman -S shutter
 yes | pacman -S jadx
