@@ -1,10 +1,12 @@
 #!/bin/bash
 #https://wiki.archlinux.org/
 
-#adjust upward mirrors.163.com in /etc/pacman.d/mirrorlist
-#open [archlinuxcn] in /etc/pacman.conf
+#mirrors
+sed -i -e 'Server = http://mirrors.163.com/archlinux/$repo/os/$arch' /etc/pacman.d/mirrorlist
+echo -e "[archlinuxcn]\nServer = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch\n" >> /etc/pacman.conf
+yes | pacman -Syu
 
-#
+#env
 locale-gen
 echo "LANG=en_US.UTF-8" > /etc/locale.conf
 echo "arch" > /etc/hostname
