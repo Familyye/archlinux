@@ -79,11 +79,14 @@ echo -e "1\nyes" | pacman -S virtualbox
 yes | pacman -S linux-headers
 modprobe vboxdrv
 yes | pacman -S latte-dock
-yes | pacman -S shutter
+#yes | pacman -S shutter
+yes | pacman -S spectacle
+yes | pacman -S git
 yes | pacman -S jadx
 yes | pacman -S anki
 yes | pacman -S shadowsocks
 yes | pacman -S git
+yes | pacman -S python-pip
 
 #aur
 #https://aur.archlinux.org/packages/tortoisehg/
