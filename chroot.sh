@@ -86,7 +86,10 @@ yes | pacman -S jadx
 yes | pacman -S anki
 yes | pacman -S shadowsocks
 yes | pacman -S git
+yes | pacman -S android-tools
 yes | pacman -S python-pip
+pip install web.py==0.40-dev1 -i https://pypi.tuna.tsinghua.edu.cn/simple
+mkdir /root/.pip
+echo -e "[global]\nindex-url = https://pypi.tuna.tsinghua.edu.cn/simple\n[install]\ntrusted-host=pypi.tuna.tsinghua.edu.cn" > /root/.pip/pip.conf
+echo "SUBSYSTEM==“usb”,ATTR{idVendor}==“18d1”,MODE=“0666”" > /etc/udev/rules.d/51-android.rules
 
-#aur
-#https://aur.archlinux.org/packages/tortoisehg/
