@@ -8,6 +8,10 @@ pip install capstone
 pip install pillow
 pip install opencv-python
 yes | pacman -S gimp
+yes | pacman -S tesseract
+yes | pacman -S tesseract-data-chi_sim
+yes | pacman -S tesseract-data-eng
+pip install pytesseract
 
 #aur
 #https://aur.archlinux.org/packages/tortoisehg/
