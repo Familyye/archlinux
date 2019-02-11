@@ -12,8 +12,12 @@ yes | pacman -S tesseract
 yes | pacman -S tesseract-data-chi_sim
 yes | pacman -S tesseract-data-eng
 pip install pytesseract
+yes | pacman -S lighttpd
+systemctl enable lighttpd
 yes | pacman -S boost
 yes | pacman -S qbittorrent
 yes | pacman -S freerdp
+yes | pacman -S fceux
+
 #aur
 #https://aur.archlinux.org/packages/tortoisehg/
