@@ -14,5 +14,6 @@ yes | pacman -S tesseract-data-eng
 pip install pytesseract
 yes | pacman -S boost
 yes | pacman -S qbittorrent
+yes | pacman -S freerdp
 #aur
 #https://aur.archlinux.org/packages/tortoisehg/
