@@ -18,6 +18,7 @@ yes | pacman -S boost
 yes | pacman -S qbittorrent
 yes | pacman -S freerdp
 yes | pacman -S fceux
+yes | pacman -S calibre #ebook reader
 
 #aur
 #https://aur.archlinux.org/packages/tortoisehg/
