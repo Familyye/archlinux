@@ -21,6 +21,7 @@ yes | pacman -S fceux
 yes | pacman -S calibre #ebook reader
 yes | pacman -S kcptun
 yes | pacman -S shadowsocks
+yes | pacman -S qemu
 
 #aur
 #https://aur.archlinux.org/packages/tortoisehg/
