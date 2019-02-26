@@ -19,6 +19,8 @@ yes | pacman -S qbittorrent
 yes | pacman -S freerdp
 yes | pacman -S fceux
 yes | pacman -S calibre #ebook reader
+yes | pacman -S kcptun
+yes | pacman -S shadowsocks
 
 #aur
 #https://aur.archlinux.org/packages/tortoisehg/
