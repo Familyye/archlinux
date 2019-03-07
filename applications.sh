@@ -23,6 +23,29 @@ yes | pacman -S kcptun
 yes | pacman -S shadowsocks
 yes | pacman -S qemu
 yes | pacman -S docker
+yes | pacman -S freeplane
+yes | pacman -S meld
+yes | pacman -S wxhexeditor-git
+yes | pacman -S dia
+yes | pacman -S filezilla
+yes | pacman -S google-chrome
+yes | pacman -S jdk8-openjdk
+yes | pacman -S eclipse-java
+yes | pacman -S gpicview
+yes | pacman -S google-earth-pro
+yes | pacman -S wireshark-cli
+yes | pacman -S qtox
+yes | pacman -S pacvis-git
+yes | pacman -S deluge
+yes | pacman -S vlc
+yes | pacman -S xpdf
+yes | pacman -S wps-office
+yes | pacman -S jadx
+yes | pacman -S anki
+yes | pacman -S android-tools
+echo -e "1\nyes" | pacman -S virtualbox
+yes | pacman -S linux-headers
+modprobe vboxdrv
 
 #aur
 #https://aur.archlinux.org/packages/tortoisehg/

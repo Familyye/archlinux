@@ -59,34 +59,10 @@ yes | pacman -S htop
 yes | pacman -S tmux
 yes | pacman -S openssh
 yes | pacman -S mlocate
-yes | pacman -S meld
-yes | pacman -S wxhexeditor-git
-yes | pacman -S dia
-yes | pacman -S filezilla
-yes | pacman -S google-chrome
-yes | pacman -S jdk8-openjdk
-yes | pacman -S eclipse-java
-yes | pacman -S gpicview
-yes | pacman -S google-earth-pro
-yes | pacman -S wireshark-cli
-yes | pacman -S qtox
-yes | pacman -S pacvis-git
-yes | pacman -S deluge
-yes | pacman -S vlc
-yes | pacman -S xpdf
-yes | pacman -S wps-office
-echo -e "1\nyes" | pacman -S virtualbox
-yes | pacman -S linux-headers
-modprobe vboxdrv
 yes | pacman -S latte-dock
-#yes | pacman -S shutter
 yes | pacman -S spectacle
 yes | pacman -S git
-yes | pacman -S jadx
-yes | pacman -S anki
 yes | pacman -S shadowsocks
-yes | pacman -S git
-yes | pacman -S android-tools
 yes | pacman -S python-pip
 pip install web.py==0.40-dev1 -i https://pypi.tuna.tsinghua.edu.cn/simple
 mkdir /root/.pip
