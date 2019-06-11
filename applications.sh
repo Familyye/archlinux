@@ -47,5 +47,6 @@ echo -e "1\nyes" | pacman -S virtualbox
 yes | pacman -S linux-headers
 modprobe vboxdrv
 
+#yes | pacman -S seafile-client
 #aur
 #https://aur.archlinux.org/packages/tortoisehg/

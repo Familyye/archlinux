@@ -41,7 +41,7 @@ yes | pacman -S xf86-video-intel
 
 #kde
 yes | pacman -S plasma-meta
-yes | pacman -S kde-applications-meta
+#yes | pacman -S kde-applications-meta
 yes | pacman -S sddm
 systemctl enable sddm
 
