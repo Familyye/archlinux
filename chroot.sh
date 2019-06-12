@@ -18,7 +18,7 @@ echo "set root password"
 passwd
 echo "add general user"
 read generaluser
-useradd $generaluser
+useradd -m $generaluser
 echo "set user password"
 passwd $generaluser
 
@@ -32,7 +32,14 @@ grub-mkconfig -o /boot/grub/grub.cfg
 #network
 yes | pacman -S networkmanager
 systemctl enable NetworkManager
-yes | pacman -S wpa_supplicant
+#yes | pacman -S wpa_supplicant
+#connect wifi
+nmcli device wifi connect ssidName password 12345678
+
+#rc.local
+yes | pacman -S systemd-rc-local
+systemctl enable rc-local
+cp ./rc.local /etc/
 
 #xorg
 yes | pacman -S xorg-server
