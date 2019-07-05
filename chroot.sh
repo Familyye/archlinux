@@ -4,12 +4,17 @@
 #mirrors
 sed -i -e '1iServer = http://mirrors.163.com/archlinux/$repo/os/$arch' /etc/pacman.d/mirrorlist
 echo -e "[archlinuxcn]\nServer = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/\$arch\n" >> /etc/pacman.conf
+
+#time
+ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+hwclock --systohc
+
 yes | pacman -Sy
 yes | pacman -S archlinuxcn-keyring
 
 #env
+#uncomment /etc/locale.gen en_US.UTF-8
 locale-gen
-echo "LANG=en_US.UTF-8" > /etc/locale.conf
 echo "arch" > /etc/hostname
 echo -e "127.0.0.1	localhost\n::1		localhost" > /etc/hosts
 

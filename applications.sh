@@ -50,3 +50,5 @@ modprobe vboxdrv
 #yes | pacman -S seafile-client
 #aur
 #https://aur.archlinux.org/packages/tortoisehg/
+
+yes | pacman -S community/atom
