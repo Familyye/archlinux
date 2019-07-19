@@ -14,6 +14,9 @@ yes | pacman -S archlinuxcn-keyring
 
 #env
 #uncomment /etc/locale.gen en_US.UTF-8
+sed 's/#en_US.UTF-8/en_US.UTF-8/' /etc/locale.gen > /etc/locale.gen
+sed 's/#zh_CN.GBK/zh_CN.GBK/' /etc/locale.gen > /etc/locale.gen
+sed 's/#zh_CN.UTF-8/zh_CN.UTF-8/' /etc/locale.gen > /etc/locale.gen
 locale-gen
 echo "arch" > /etc/hostname
 echo -e "127.0.0.1	localhost\n::1		localhost" > /etc/hosts
