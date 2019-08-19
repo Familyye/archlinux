@@ -52,3 +52,4 @@ modprobe vboxdrv
 #https://aur.archlinux.org/packages/tortoisehg/
 
 yes | pacman -S community/atom
+yes | pacman -S extra/thunderbird
