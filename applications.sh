@@ -36,7 +36,8 @@ yes | pacman -S google-earth-pro
 yes | pacman -S wireshark-cli
 yes | pacman -S qtox
 yes | pacman -S pacvis-git
-yes | pacman -S deluge
+#yes | pacman -S deluge
+yes | pacman -S ktorrent
 yes | pacman -S vlc
 yes | pacman -S xpdf
 yes | pacman -S wps-office
