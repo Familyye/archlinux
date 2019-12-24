@@ -40,8 +40,9 @@ yes | pacman -S pacvis-git
 yes | pacman -S ktorrent
 yes | pacman -S vlc
 yes | pacman -S xpdf
-yes | pacman -S wps-office
-yes | pacman -S ttf-wps-fonts
+#yes | pacman -S wps-office
+yes | pacman -S libreoffice-still
+#yes | pacman -S ttf-wps-fonts
 yes | pacman -S jadx
 yes | pacman -S anki
 yes | pacman -S android-tools
@@ -56,3 +57,6 @@ modprobe vboxdrv
 yes | pacman -S community/atom
 #yes | pacman -S extra/thunderbird
 yes | pacman -S extra/kolourpaint
+yes | pacman -S deepin-calculator
+yes | pacman -S deepin-screenshot
+yes | pacman -S deepin-screen-recorder
