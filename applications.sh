@@ -61,3 +61,4 @@ yes | pacman -S deepin-calculator
 #yes | pacman -S spectacle
 yes | pacman -S deepin-screenshot
 yes | pacman -S deepin-screen-recorder
+yes | pacman -S archlinuxcn/baidunetdisk-bin
