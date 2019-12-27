@@ -62,3 +62,4 @@ yes | pacman -S deepin-calculator
 yes | pacman -S deepin-screenshot
 yes | pacman -S deepin-screen-recorder
 yes | pacman -S archlinuxcn/baidunetdisk-bin
+yes | pacman -S extra/qalculate-gtk
