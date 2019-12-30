@@ -7,6 +7,8 @@ echo -e "[archlinuxcn]\nServer = https://mirrors.tuna.tsinghua.edu.cn/archlinuxc
 
 #time
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+yes | pacman -S ntpdate
+ntpdate -u ntp.api.bz #update time from network
 hwclock --systohc
 
 yes | pacman -Sy
@@ -27,7 +29,7 @@ passwd
 echo "add general user"
 read generaluser
 useradd -m $generaluser
-echo "set user password"
+echo "set general user password"
 passwd $generaluser
 
 #grub
@@ -70,7 +72,7 @@ yes | pacman -S wqy-zenhei
 yes | pacman -S wqy-microhei-kr-patched
 
 #most used software
-yes | pacman -S bash-completion
+#yes | pacman -S bash-completion
 yes | pacman -S htop
 yes | pacman -S tmux
 yes | pacman -S openssh

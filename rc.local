@@ -11,6 +11,6 @@
 #
 # By default this script does nothing.
  
-/home/arch/init.sh
+#/home/arch/init.sh
  
 exit 0
