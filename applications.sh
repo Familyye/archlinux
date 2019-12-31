@@ -63,3 +63,4 @@ yes | pacman -S deepin-screenshot
 yes | pacman -S deepin-screen-recorder
 yes | pacman -S archlinuxcn/baidunetdisk-bin
 yes | pacman -S extra/qalculate-gtk
+yes | pacman -S kate #gedit
