@@ -57,7 +57,8 @@ modprobe vboxdrv
 yes | pacman -S community/atom
 #yes | pacman -S extra/thunderbird
 yes | pacman -S extra/kolourpaint
-yes | pacman -S deepin-calculator
+#yes | pacman -S deepin-calculator
+yes | pacman -S kcalc
 #yes | pacman -S spectacle
 yes | pacman -S deepin-screenshot
 yes | pacman -S deepin-screen-recorder
