@@ -54,6 +54,7 @@ modprobe vboxdrv
 #aur
 #https://aur.archlinux.org/packages/tortoisehg/
 
+yes | pacman -S konsole
 yes | pacman -S community/atom
 #yes | pacman -S extra/thunderbird
 yes | pacman -S extra/kolourpaint
