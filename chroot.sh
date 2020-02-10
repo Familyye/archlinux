@@ -65,6 +65,7 @@ systemctl enable sddm
 #input method
 yes | pacman -S fcitx-sogoupinyin
 yes | pacman -S fcitx-im
+yes | pacman -S fcitx-configtool
 yes | pacman -S wqy-bitmapfont
 yes | pacman -S wqy-microhei
 yes | pacman -S wqy-microhei-lite
