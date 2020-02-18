@@ -67,3 +67,6 @@ yes | pacman -S archlinuxcn/baidunetdisk-bin
 yes | pacman -S extra/qalculate-gtk
 yes | pacman -S kate #gedit
 yes | pacman -S ark #compress file man
+
+yes | pacman -S kdeconnect
+yes | pacman -S sshfs
