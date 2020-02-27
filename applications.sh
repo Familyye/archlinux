@@ -68,11 +68,10 @@ yes | pacman -S extra/qalculate-gtk
 yes | pacman -S kate #gedit
 yes | pacman -S ark #compress file man
 
-<<<<<<< HEAD
+#kdeconnect
+yes | pacman -S kdeconnect
+yes | pacman -S sshfs
+
 #c/c++ python gui tool
 yes | pacman -S kdevelop
 yes | pacman -S kdevelop-python
-=======
-yes | pacman -S kdeconnect
-yes | pacman -S sshfs
->>>>>>> f25d8e69987b0b0019c22c1516b6986e34aa80aa
