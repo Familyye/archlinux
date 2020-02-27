@@ -66,3 +66,7 @@ yes | pacman -S archlinuxcn/baidunetdisk-bin
 yes | pacman -S extra/qalculate-gtk
 yes | pacman -S kate #gedit
 yes | pacman -S ark #compress file man
+
+#c/c++ python gui tool
+yes | pacman -S kdevelop
+yes | pacman -S kdevelop-python
