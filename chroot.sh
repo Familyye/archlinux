@@ -65,6 +65,16 @@ systemctl enable sddm
 #input method
 yes | pacman -S fcitx-sogoupinyin
 yes | pacman -S fcitx-im
+yes | pacman -S fcitx-configtool
+
+echo -e "#fcitx\n
+export XIM_PROGRAM=fcitx\n
+export XIM=fcitx\n
+export SIM_PROGRAM=fcitx\n
+export XMODIFIERS=fcitx\n
+export GTK_IM_MODULE=fcitx\n
+export QT_IM_MODULE=fcitx\n" >> /etc/profile
+
 yes | pacman -S wqy-bitmapfont
 yes | pacman -S wqy-microhei
 yes | pacman -S wqy-microhei-lite
