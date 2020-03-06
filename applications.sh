@@ -75,3 +75,6 @@ yes | pacman -S sshfs
 #c/c++ python gui tool
 yes | pacman -S kdevelop
 yes | pacman -S kdevelop-python
+
+yes | pacman -S git
+yes | pacman -S gitg

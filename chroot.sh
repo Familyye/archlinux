@@ -88,7 +88,6 @@ yes | pacman -S tmux
 yes | pacman -S openssh
 yes | pacman -S mlocate
 yes | pacman -S latte-dock
-yes | pacman -S git
 yes | pacman -S shadowsocks
 yes | pacman -S python-pip
 pip install web.py==0.40-dev1 -i https://pypi.tuna.tsinghua.edu.cn/simple
