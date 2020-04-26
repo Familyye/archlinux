@@ -78,3 +78,5 @@ yes | pacman -S kdevelop-python
 
 yes | pacman -S git
 yes | pacman -S gitg
+
+yes | pacman -S wkhtmltopdf
