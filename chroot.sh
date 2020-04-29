@@ -84,6 +84,7 @@ yes | pacman -S wqy-microhei-kr-patched
 #most used software
 #yes | pacman -S bash-completion
 yes | pacman -S htop
+yes | pacman -S bashtop
 yes | pacman -S tmux
 yes | pacman -S openssh
 yes | pacman -S mlocate
