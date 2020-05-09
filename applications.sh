@@ -80,3 +80,6 @@ yes | pacman -S git
 yes | pacman -S gitg
 
 yes | pacman -S wkhtmltopdf
+
+yes | pacman -S jad #java decompile
+yes | pacman -S vim-jad #vim-plugins
