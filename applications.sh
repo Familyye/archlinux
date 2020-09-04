@@ -15,7 +15,7 @@ pip install pytesseract
 yes | pacman -S lighttpd
 systemctl enable lighttpd
 yes | pacman -S boost
-yes | pacman -S qbittorrent
+#yes | pacman -S qbittorrent
 yes | pacman -S freerdp
 yes | pacman -S fceux
 yes | pacman -S calibre #ebook reader
@@ -37,7 +37,8 @@ yes | pacman -S wireshark-cli
 yes | pacman -S qtox
 yes | pacman -S pacvis-git
 #yes | pacman -S deluge
-yes | pacman -S ktorrent
+#yes | pacman -S ktorrent
+yes | pacman -S motrix-git
 yes | pacman -S vlc
 yes | pacman -S xpdf
 #yes | pacman -S wps-office
