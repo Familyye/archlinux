@@ -38,7 +38,8 @@ yes | pacman -S qtox
 yes | pacman -S pacvis-git
 #yes | pacman -S deluge
 #yes | pacman -S ktorrent
-yes | pacman -S motrix-git
+#yes | pacman -S motrix-git
+yes | pacman -S aria2 #直接使用命令行下载工具
 yes | pacman -S vlc
 yes | pacman -S xpdf
 #yes | pacman -S wps-office
@@ -85,3 +86,6 @@ yes | pacman -S wkhtmltopdf
 
 yes | pacman -S jad #java decompile
 yes | pacman -S vim-jad #vim-plugins
+
+
+yes | pacman -S ghidra #NSA开源的逆向工具框架，类似于ida
