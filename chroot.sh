@@ -63,11 +63,17 @@ yes | pacman -S sddm
 systemctl enable sddm
 
 #input method
-yes | pacman -S fcitx-sogoupinyin
-yes | pacman -S fcitx-im
-yes | pacman -S fcitx-configtool
+#yes | pacman -S fcitx-sogoupinyin
+#yes | pacman -S fcitx-im
+#yes | pacman -S fcitx-configtool
+yes | pacman -S fcitx5-im
+yes | pacman -S fcitx5-chinese-addons
 
 echo -e "#fcitx\n
+export INPUT_METHOD  DEFAULT=fcitx\n
+export GTK_IM_MODULE DEFAULT=fcitx\n
+export GTK_IM_MODULE DEFAULT=fcitx\n
+export XMODIFIERS    DEFAULT=\@im=fcitx\n
 export XIM_PROGRAM=fcitx\n
 export XIM=fcitx\n
 export SIM_PROGRAM=fcitx\n
