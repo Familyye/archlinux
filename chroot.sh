@@ -7,7 +7,7 @@ echo -e "[archlinuxcn]\nServer = https://mirrors.tuna.tsinghua.edu.cn/archlinuxc
 
 #time
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-yes | pacman -S ntpdate
+yes | pacman -S ntp
 ntpdate -u ntp.api.bz #update time from network
 hwclock --systohc
 
@@ -68,6 +68,7 @@ systemctl enable sddm
 #yes | pacman -S fcitx-configtool
 yes | pacman -S fcitx5-im
 yes | pacman -S fcitx5-chinese-addons
+yes | pacman -S fcitx5-pinyin-zhwiki
 
 echo -e "#fcitx\n
 export INPUT_METHOD  DEFAULT=fcitx\n
