@@ -39,7 +39,8 @@ yes | pacman -S pacvis-git
 #yes | pacman -S deluge
 #yes | pacman -S ktorrent
 #yes | pacman -S motrix-git
-yes | pacman -S aria2 #直接使用命令行下载工具
+#yes | pacman -S aria2 #直接使用命令行下载工具
+yes | pacman -S qbittorrent
 yes | pacman -S vlc
 yes | pacman -S xpdf
 #yes | pacman -S wps-office
