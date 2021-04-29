@@ -95,3 +95,7 @@ yes | pacman -S ghidra #NSA开源的逆向工具框架，类似于ida
 yes | pacman -S qstardict #stardict的qt4版本
 #tar -xjvf xxxdict.tar.bz2
 #mv a /usr/share/stardict/dic
+
+yes | pacman -S earlyoom
+systemctl enable earlyoom
+
