@@ -99,3 +99,5 @@ yes | pacman -S qstardict #stardict的qt4版本
 yes | pacman -S earlyoom
 systemctl enable earlyoom
 
+yes | pacman -S pkgconf
+yes | pacman -S autoconf
