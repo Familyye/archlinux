@@ -101,3 +101,5 @@ systemctl enable earlyoom
 
 yes | pacman -S pkgconf
 yes | pacman -S autoconf
+yes | pacman -S yay
+yes | yay -S ifuse
