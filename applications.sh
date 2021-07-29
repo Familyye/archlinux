@@ -103,3 +103,4 @@ yes | pacman -S pkgconf
 yes | pacman -S autoconf
 yes | pacman -S yay
 yes | yay -S ifuse
+yes | yay -S sqlitebrowser
