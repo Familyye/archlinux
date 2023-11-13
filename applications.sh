@@ -20,7 +20,9 @@ yes | pacman -S freerdp
 yes | pacman -S fceux
 yes | pacman -S calibre #ebook reader
 yes | pacman -S kcptun
-yes | pacman -S shadowsocks
+yes | pacman -S v2raya
+systemctl enable v2raya
+systemctl start v2raya
 yes | pacman -S qemu
 yes | pacman -S docker
 yes | pacman -S freeplane
